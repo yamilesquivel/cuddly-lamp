@@ -8,17 +8,16 @@ const responseMessage = document.getElementById('responseMessage');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Deshabilitar el botón
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Enviando...';
+    submitBtn.innerHTML = '<span>Enviando...</span>';
     responseMessage.style.display = 'none';
 
-    // Obtener datos del formulario
     const formData = new FormData(form);
     const data = {
         name: formData.get('name'),
         email: formData.get('email'),
-        phone: formData.get('phone') || 'No proporcionado',
+        phone: formData.get('phone'),
+        company: formData.get('company') || 'No especificó',
         message: formData.get('message'),
         timestamp: new Date().toISOString()
     };
@@ -31,22 +30,24 @@ form.addEventListener('submit', async (e) => {
 
         if (response.ok) {
             responseMessage.className = 'message success';
-            responseMessage.textContent = '¡Gracias! Tu mensaje ha sido enviado correctamente.';
+            responseMessage.textContent = '🎉 ¡Perfecto! Tu consultoría está reservada. Te contactaremos en menos de 24 horas.';
             responseMessage.style.display = 'block';
             form.reset();
+            
+            // Scroll suave al mensaje
+            responseMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
             throw new Error('Error en el envío');
         }
     } catch (error) {
         responseMessage.className = 'message error';
-        responseMessage.textContent = 'Hubo un error al enviar el formulario. Por favor, intenta de nuevo.';
+        responseMessage.textContent = 'Ups, algo salió mal. Por favor intenta nuevamente o contáctanos directamente.';
         responseMessage.style.display = 'block';
     } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar';
+        submitBtn.innerHTML = '<span>Agendar Mi Consultoría Gratis</span><span class="btn-arrow">→</span>';
     }
 });
-```
 
 ## 🚀 Estructura de tu repositorio:
 ```
