@@ -4,68 +4,313 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tu Producto Increíble</title>
+    <meta name="description" content="Transforma tu negocio hoy. Únete a más de 10,000 empresas que ya confían en nosotros.">
+    <title>Transforma Tu Negocio Hoy | Resultados Garantizados</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Hero Section con CTA Principal -->
     <section class="hero">
         <div class="container">
-            <h1>🚀 Tu Producto Increíble</h1>
-            <p class="subtitle">Únete a miles de usuarios que ya están transformando su negocio</p>
+            <div class="hero-badge">🔥 Más de 10,000 clientes satisfechos</div>
+            <h1>Multiplica tus Resultados en <span class="highlight">30 Días</span></h1>
+            <p class="hero-subtitle">La solución completa que tu negocio necesita para crecer de forma predecible y escalable</p>
             
-            <div class="form-container">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nombre completo</label>
-                        <input type="text" id="name" name="name" required>
+            <div class="benefits-quick">
+                <div class="benefit-item">✓ Sin contratos largos</div>
+                <div class="benefit-item">✓ Resultados medibles</div>
+                <div class="benefit-item">✓ Soporte 24/7</div>
+            </div>
+
+            <button class="cta-primary" onclick="scrollToForm()">
+                Quiero mi Consultoría Gratis →
+            </button>
+            
+            <p class="trust-text">💳 Sin tarjeta de crédito • 🚀 Comienza en 5 minutos</p>
+        </div>
+    </section>
+
+    <!-- Problema/Agitación -->
+    <section class="problem-section">
+        <div class="container-narrow">
+            <h2>¿Te suena familiar?</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <span class="problem-icon">😤</span>
+                    <h3>Inviertes tiempo y dinero sin ver resultados claros</h3>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">📉</span>
+                    <h3>Tus competidores están creciendo más rápido que tú</h3>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">🤯</span>
+                    <h3>No sabes qué estrategia seguir o por dónde empezar</h3>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">💸</span>
+                    <h3>Gastas en herramientas que no aprovechas al máximo</h3>
+                </div>
+            </div>
+            <p class="problem-conclusion">No estás solo. El 73% de las empresas enfrentan estos mismos desafíos.</p>
+        </div>
+    </section>
+
+    <!-- Solución -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2>La Solución que Estabas Buscando</h2>
+                    <p class="solution-intro">Nuestro sistema probado te ayuda a escalar tu negocio de forma predecible, sin desperdiciar recursos ni tiempo.</p>
+                    
+                    <div class="solution-features">
+                        <div class="feature-item">
+                            <span class="feature-number">01</span>
+                            <div>
+                                <h3>Estrategia Personalizada</h3>
+                                <p>Creamos un plan específico para tu negocio, no plantillas genéricas</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">02</span>
+                            <div>
+                                <h3>Implementación Guiada</h3>
+                                <p>Te acompañamos paso a paso para asegurar resultados</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">03</span>
+                            <div>
+                                <h3>Optimización Continua</h3>
+                                <p>Monitoreamos y mejoramos constantemente tus métricas</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                </div>
+                <div class="solution-image">
+                    <div class="image-placeholder">
+                        <p>📊</p>
+                        <span>Aquí va tu imagen de dashboard/resultados</span>
                     </div>
-
-                    <div class="form-group">
-                        <label for="phone">Teléfono (opcional)</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn" id="submitBtn">
-                        Enviar
-                    </button>
-
-                    <div id="responseMessage" class="message"></div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
-        <h2>¿Por qué elegirnos?</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Rápido</h3>
-                <p>Respuestas en menos de 24 horas</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔒</div>
-                <h3>Seguro</h3>
-                <p>Tus datos están protegidos</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💯</div>
-                <h3>Confiable</h3>
-                <p>Miles de clientes satisfechos</p>
+    <!-- Beneficios -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Lo que Lograrás con Nosotros</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>+150% de Crecimiento</h3>
+                    <p>En promedio, nuestros clientes triplican sus resultados en 6 meses</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏱️</div>
+                    <h3>Ahorra 20+ Horas/Semana</h3>
+                    <p>Automatiza procesos y enfócate en lo que realmente importa</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>ROI de 5x o Más</h3>
+                    <p>Cada peso invertido te retorna 5 veces más en resultados</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Decisiones Basadas en Datos</h3>
+                    <p>Deja de adivinar y toma decisiones con información real</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Social Proof -->
+    <section class="testimonials-section">
+        <div class="container-narrow">
+            <h2>Lo que Dicen Nuestros Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"En 3 meses duplicamos nuestras ventas. El equipo es increíble y los resultados hablan por sí solos."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div>
+                            <strong>María Castro</strong>
+                            <span>CEO, TechFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Pasamos de estar estancados a crecer 30% mensual. La mejor inversión que hicimos este año."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JR</div>
+                        <div>
+                            <strong>Jorge Ramírez</strong>
+                            <span>Fundador, EcoShop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Finalmente entendemos nuestros números y sabemos exactamente dónde invertir. Game changer total."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div>
+                            <strong>Ana López</strong>
+                            <span>Directora, Creativa Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparación -->
+    <section class="comparison-section">
+        <div class="container-narrow">
+            <h2>Antes vs Después de Trabajar con Nosotros</h2>
+            <div class="comparison-table">
+                <div class="comparison-col before">
+                    <h3>😔 Antes</h3>
+                    <ul>
+                        <li>Resultados impredecibles</li>
+                        <li>Procesos desorganizados</li>
+                        <li>Crecimiento lento o estancado</li>
+                        <li>Gastos sin retorno claro</li>
+                        <li>Estrés constante</li>
+                    </ul>
+                </div>
+                <div class="comparison-col after">
+                    <h3>🚀 Después</h3>
+                    <ul>
+                        <li>Crecimiento predecible y escalable</li>
+                        <li>Sistemas automatizados</li>
+                        <li>Expansión constante y medible</li>
+                        <li>ROI claro en cada inversión</li>
+                        <li>Tranquilidad y confianza</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container-narrow">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>¿Cuánto tiempo toma ver resultados?</h3>
+                    <p>La mayoría de nuestros clientes ven mejoras significativas en las primeras 2-4 semanas. Los resultados completos se consolidan entre 60-90 días.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Funciona para mi industria?</h3>
+                    <p>Hemos trabajado con más de 50 industrias diferentes. Nuestro sistema se adapta a las necesidades específicas de tu negocio.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué pasa si no veo resultados?</h3>
+                    <p>Ofrecemos garantía de satisfacción. Si sigues nuestro proceso y no ves mejoras, te devolvemos tu inversión.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Necesito conocimientos técnicos?</h3>
+                    <p>Para nada. Nos encargamos de todo lo técnico. Tú solo necesitas seguir nuestras recomendaciones estratégicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final con Formulario -->
+    <section class="final-cta" id="contacto">
+        <div class="container-narrow">
+            <div class="cta-content">
+                <h2>Comienza Tu Transformación Hoy</h2>
+                <p class="cta-subtitle">Agenda una consultoría gratuita de 30 minutos donde analizaremos tu situación actual y te mostraremos exactamente cómo podemos ayudarte.</p>
+                
+                <div class="urgency-box">
+                    <span class="urgency-icon">⏰</span>
+                    <p><strong>Solo 3 spots disponibles esta semana</strong> - Las consultorías se agotan rápido</p>
+                </div>
+
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo *</label>
+                                <input type="text" id="name" name="name" placeholder="Juan Pérez" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email corporativo *</label>
+                                <input type="email" id="email" name="email" placeholder="juan@empresa.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+54 11 1234-5678" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company" placeholder="Tu Empresa SRL">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">¿Cuál es tu mayor desafío actual? *</label>
+                            <textarea id="message" name="message" placeholder="Cuéntanos brevemente qué te gustaría lograr..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span>Agendar Mi Consultoría Gratis</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+
+                        <div id="responseMessage" class="message"></div>
+
+                        <p class="form-privacy">🔒 Tus datos están seguros. No compartimos información con terceros.</p>
+                    </form>
+                </div>
+
+                <div class="final-benefits">
+                    <div class="final-benefit-item">
+                        <span>✓</span> Sin compromiso
+                    </div>
+                    <div class="final-benefit-item">
+                        <span>✓</span> Sin tarjeta de crédito
+                    </div>
+                    <div class="final-benefit-item">
+                        <span>✓</span> Respuesta en 24hs
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+    <script>
+        function scrollToForm() {
+            document.getElementById('contacto').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+    </script>
 </body>
 </html>
