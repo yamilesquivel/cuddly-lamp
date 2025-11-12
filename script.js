@@ -79,12 +79,3 @@ function scrollToForm() {
     }
 }
 
-
-
-
-## 🚀 Estructura de tu repositorio:
-```
-tu-repositorio/
-├── index.html
-├── styles.css
-└── script.js
