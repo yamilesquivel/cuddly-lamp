@@ -1,5 +1,5 @@
 // IMPORTANTE: Reemplaza esta URL con tu Web App URL de Google Apps Script
-const GOOGLE_SCRIPT_URL = 'TU_URL_DE_GOOGLE_SCRIPT_AQUI';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxC2FP7Dc3l-C8wjdG-rF-aDZsOK5gzl9Vfn81mNZVwimbAyUU8MwsVWyfCH9nHLFM/exec';
 
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
